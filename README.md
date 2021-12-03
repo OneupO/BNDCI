@@ -4,7 +4,7 @@
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/OneupO/BNDCI/main/src/img/ico.ico?token=AK6YYW4HRMGB7IHYQC2CYFLBVISAQ" title="Logo">
+<img src="https://raw.githubusercontent.com/OneupO/BNDCI/main/src/img/ico.ico?token=AK6YYW5JUEWYDVOQ7NFYEL3BVITD2" title="Logo">
 
 </p>
 
