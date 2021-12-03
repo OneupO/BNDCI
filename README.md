@@ -1,9 +1,12 @@
 # BNDCI
 
-***Приложение на Electron, которое выбирает случайные числа из списка.***
+**Приложение на Electron, которое выбирает случайные числа из списка.**
+
+<p align="center">
 
 ![alt-текст](https://raw.githubusercontent.com/OneupO/BNDCI/main/src/img/ico.ico?token=AK6YYW4HRMGB7IHYQC2CYFLBVISAQ "Logo")
 
+</p>
 
 ## Установка
 
@@ -11,7 +14,7 @@
 
 ## Модификация 
 
-<p>Если вы захотите модифицировать приложение вам понадобиться  </p>
+<p>Если вы захотите модифицировать приложение вам понадобиться</p>
 
 * Node.js 
 * Elecron js 
