@@ -4,7 +4,7 @@
 
 <p align="center">
 
-![alt-текст](https://raw.githubusercontent.com/OneupO/BNDCI/main/src/img/ico.ico?token=AK6YYW4HRMGB7IHYQC2CYFLBVISAQ "Logo")
+<img src="https://raw.githubusercontent.com/OneupO/BNDCI/main/src/img/ico.ico?token=AK6YYW4HRMGB7IHYQC2CYFLBVISAQ" title="Logo">
 
 </p>
 
