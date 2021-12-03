@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+html {
+    background: #0D0D0D;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+button, span{
+    padding: 0 0 0 0;
+    -webkit-app-region: no-drag;
+    -webkit-user-drag: none;
+}
+
+.Winbar{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    text-align: center;
+    
+   
+
+    background: rgba(56, 94, 230, 1);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28.8px;
+    color:rgba(236, 236, 236, 1);
+
+    -webkit-app-region: drag;
+}
+
+.Winbar-left{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    -webkit-app-region: drag;
+}
+.Winbar-right{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+
+    -webkit-app-region: no-drag;
+    /* margin: 5px 14px 5px 14px; /*top, right, bottom, left */ 
+}
+
+span{
+    display: flex;
+    align-items: center;
+}
+
+.Space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 14px 0px 14px; 
+    -webkit-app-region: no-drag;
+}
+
+.Space:hover{
+    background-color: rgb(76, 114, 250);
+}
+.Space:hover#closeBtn{
+    background-color: rgb(236, 38, 38);
+}
+
+.Space:active{
+    background-color: rgb(23, 152, 192);
+}
+
+img#Logo, #Bnd{
+    pointer-events:none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    cursor:none;  
+}
+
+#Logo{
+    margin: 5px 8px 5px 15px;
+}
+
+/* #Settings{
+    
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row;
+
+} */
+
+/* .Line{
+    position: fixed;
+    display: flex;
+    
+    flex-flow: row;
+    align-items: center;
+
+    margin-left: 90vw;
+    gap: 25px;
+    
+    
+} */
+
+/* .PanelLine{
+    
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+} */
+
+.PosBtn{
+display: flex;
+justify-content: flex-start;
+flex-flow:row wrap;
+
+padding: 0 64px;
+margin-top: 84px;
+min-width: 429px;
+
+}
+
+#BtnS:disabled{
+    background: rgba(239, 239, 239, 0.3);
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color:rgba(236, 236, 236, 1);
+
+    min-width: 185px;
+    min-height: 35px;
+    outline: 0;
+    border: 0;
+    transition: none;
+    padding: 0 0 0 0;
+}
+
+#BtnS:enabled {
+    background: rgb(56, 94, 231);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color:rgba(236, 236, 236, 1);
+
+    min-width: 185px;
+    min-height: 35px;
+    outline: 0;
+    border: 0;
+    padding: 0 0 0 0;
+
+    cursor: pointer; 
+    
+}
+#BtnS:active{
+    /* background: conic-gradient(from 180deg at 50% 50%, #1829C4 0deg, #0A1048 123.75deg, #0A1048 234.38deg, #1829C4 360deg); */
+    background: rgb(31, 65, 190);
+    /* background: linear-gradient(180deg, #022464 0%, rgba(0, 0, 139, 0.89) 11.98%, #02408F 53.12%, #0070FF 100%); */
+    
+  }
+
+#Clear{
+    background: rgb(56, 94, 231);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color:rgba(236, 236, 236, 1);
+
+    min-width: 185px;
+    min-height: 35px;
+    outline: 0;
+    border: 0;
+    margin: 0 0 0 64px;
+    padding: 0 0 0 0;
+
+    cursor: pointer;
+}
+
+#Clear:active{
+    background: rgb(31, 65, 190);
+}
+
+.PosCon{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow:column wrap;
+    
+    padding: 0 58px 0 58px;
+}
+
+h1#List{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color:rgba(236, 236, 236, 1);
+
+    margin: 45px 0 0 0;
+    padding: 9px 15px;
+}
+
+#InpIn{
+    background: rgba(53, 51, 51, 1);
+    min-width: 100%;
+    min-height: 44px;
+    border-radius: 21px;
+    padding: 0 24px;
+
+    outline: 0;
+    border: 0;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    color:rgba(236, 236, 236, 1);
+}
+
+h1#Num{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color:rgba(236, 236, 236, 1);
+
+    margin: 38px 0 0 0;
+    padding: 9px 15px;
+}
+
+.Out{
+    display: flex;
+    align-items: center;
+    
+    background: rgba(53, 51, 51, 1);
+
+    min-width: 100%;
+    min-height: 44px;
+    border-radius: 21px;
+    padding: 0 24px;
+
+    outline: 0;
+    border: 0;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color:rgba(236, 236, 236, 1);
+}
+
+.Unselectable {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    pointer-events: none;
+    user-select: none;
+
+    -webkit-touch-callout: none; 
+     -khtml-user-select: none; /* Konqueror HTML */
+    /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;
+    cursor: none;
+}
+
+::selection { background: transparent;color:inherit; }
+::-moz-selection { background: transparent;color:inherit; }
+
+/* MEDIA QUERY*/
+@supports (display: flex) {
+@media screen and (max-width: 578px) {
+
+    .PosBtn{
+        display: flex;
+        justify-content: center;
+        flex-flow:row wrap;
+        min-width: fit-content;
+    }
+
+    button, span{
+        margin: 0 0;
+        
+    }
+
+    #Clear,#BtnS{
+        margin: 24px 0 0 0;
+    }
+
+    .PosCon{
+        display: flex;
+        justify-content: flex-start;
+
+        padding: 0 58px 0 58px;
+        min-width: 50%;
+        margin: 0px 0 0 0;
+        min-width: fit-content;
+    }
+
+    #InpIn, .Out{
+        display: flex;
+        justify-content: flex-start;
+
+        min-width: fit-content;
+    }
+    #Clear::before{
+        margin: 24px 0 0 0;
+    }
+}
+}
