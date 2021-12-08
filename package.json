@@ -1,0 +1,79 @@
+{
+  "name": "benedicte",
+  "productName": "BNDCI",
+  "version": "1.0.0",
+  "description": "Electron app, pick random numbers from the list.",
+  "main": "src/script/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build-installer": "electron-builder"
+  },
+  "build": {
+    "appId": "benedicte",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/ico.ico"
+    },
+    "nsis": {
+      "installerIcon": "src/ico.ico",
+      "uninstallerIcon": "src/ico.ico",
+      "uninstallDisplayName": "BNDCI",
+      "license": "license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": {
+    "name": "OneupO",
+    "email": "gorka__1@bk.ru"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "benedicte"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.61",
+    "@electron-forge/maker-deb": "^6.0.0-beta.61",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
+    "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "electron-builder": "^22.14.5",
+    "electron": "16.0.2",
+    "json-schema": ">=0.4.0",
+    "trim-newlines": ">=3.0.1"
+  }
+}
